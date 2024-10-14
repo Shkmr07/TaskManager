@@ -1,0 +1,170 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #007bff;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Navigation Heading */
+nav h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+/* Form Container */
+#task {
+    display: none; /* Initially hidden */
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+/* Form Heading */
+#task h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+/* Input Fields */
+#task input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+#task input[type="text"]:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Submit Button */
+#task input[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 15px;
+}
+
+#task input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Task Details Heading */
+h1 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* Task Cards */
+#disTask {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
+}
+
+#disTask div {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    margin: 10px;
+    padding: 15px;
+    width: 300px; /* Adjust width as needed */
+}
+
+/* Task Card Heading */
+#disTask h3 {
+    margin-bottom: 10px;
+}
+
+/* Task Card Description */
+#disTask p {
+    margin: 10px 0;
+}
+
+/* Button Styles */
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Sorting Container */
+.sorting-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.sorting-container label {
+    margin-right: 10px;
+    font-size: 18px;
+    color: #333;
+}
+
+#sorting {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+#sorting:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Style for the Create Task Button */
+#openTaskForm {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 20px;
+}
+
+#openTaskForm:hover {
+    background-color: #0056b3;
+}
