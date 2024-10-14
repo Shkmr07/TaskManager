@@ -111,11 +111,19 @@ function populateTheData(title,description,idx){
 
 selectTag.addEventListener('change',()=>{
     
-    let statuRes = selectTag.value === 'pending'?false:true
+    let filterTaskData;
 
     let tasks = JSON.parse(localStorage.getItem('tasks')) || []
 
-    let filterTaskData = tasks.filter(item=>item.status===statuRes)
+    if(selectTag.value === 'pending'){
+        filterTaskData = tasks.filter(item=>item.status==false)
+    }
+    else if(selectTag.value === 'completed'){
+        filterTaskData = tasks.filter(item=>item.status)
+    }
+    else{
+        filterTaskData = tasks
+    }
 
     disTask.innerHTML = ''
 
